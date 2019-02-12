@@ -9,7 +9,7 @@ const dbInit = () => {
       Page.Content = Page.hasMany(Content)
       Content.belongsTo(Page)
     })
-    .then(() => connection.sync())
+    .then(() => connection.sync({ force: true }))
 }
 
 const seedData = () => {
