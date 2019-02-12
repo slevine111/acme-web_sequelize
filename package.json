@@ -1,0 +1,22 @@
+{
+  "name": "acme-web-sequelize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "DATABASE_URL=postgres://localhost/acme_web_sequelize node server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "express": "^4.16.4",
+    "mocha": "^5.2.0",
+    "morgan": "^1.9.1",
+    "pg": "^7.8.0",
+    "sequelize": "^4.42.0",
+    "supertest": "^3.4.2"
+  }
+}
