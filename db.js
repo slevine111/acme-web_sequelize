@@ -13,7 +13,7 @@ const dbInit = () => {
 }
 
 const seedData = () => {
-  dbInit()
+  return dbInit()
     .then(() => {
       const createPages = Promise.all([
         Page.create({
